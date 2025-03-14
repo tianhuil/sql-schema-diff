@@ -41,5 +41,5 @@ bun run migra \
   $DB_STR/$TARGET_DB \
   --unsafe \
   --schema public \
-  --with-privileges
+  --with-privileges \
   > result/migra-diff.sql

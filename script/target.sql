@@ -1,6 +1,8 @@
+CREATE SCHEMA IF NOT EXISTS private;
+
 -- Create profiles table
 CREATE TABLE
-  public.test (
+  private.test (
     "id" UUID NOT NULL,
     "updated_at" timestamptz NULL,
     "username" TEXT NULL,
@@ -9,4 +11,4 @@ CREATE TABLE
   );
 
 -- Create index "profiles_search_idx" to table: profiles
-CREATE INDEX "test_search_idx" ON public.test ("username");
+CREATE INDEX "private"."test_search_idx" ON private.test ("username");

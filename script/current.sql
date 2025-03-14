@@ -1,6 +1,8 @@
+CREATE SCHEMA IF NOT EXISTS private;
+
 -- Create profiles table
 CREATE TABLE
-  public.test (
+  private.test (
     "id" UUID NOT NULL,
     "updated_at" timestamptz NULL,
     "username" TEXT NULL,

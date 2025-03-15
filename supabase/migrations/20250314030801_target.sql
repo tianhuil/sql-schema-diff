@@ -10,5 +10,8 @@ CREATE TABLE
     CONSTRAINT "profiles_pkey" PRIMARY KEY ("id")
   );
 
+CREATE VIEW private.test_view AS
+SELECT id, username, age FROM private.test;
+
 -- Create index "profiles_search_idx" to table: profiles
 CREATE INDEX "test_search_idx" ON private.test ("username");

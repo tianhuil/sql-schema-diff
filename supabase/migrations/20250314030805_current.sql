@@ -11,3 +11,6 @@ CREATE TABLE
     "username" TEXT NULL,
     CONSTRAINT "profiles_pkey" PRIMARY KEY ("id")
   );
+
+CREATE VIEW private.test_view AS
+SELECT id, username FROM private.test;

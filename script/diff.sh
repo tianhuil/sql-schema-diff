@@ -8,5 +8,6 @@ bun supabase db reset --version 20250314030801
 # Run supabase db diff with the second SQL file
 echo "Running supabase db diff with the second SQL file..."
 bun supabase db diff --use-migra --local --schema private > results/migra-diff.sql
-bun supabase db diff --use-pgadmin --local --schema private > results/pgadmin-diff.sql
 bun supabase db diff --use-pg-schema --local --schema private > results/pg-schema-diff.sql
+# --use-pgadmin is not working:
+# bun supabase db diff --use-pgadmin --local --schema private > results/pgadmin-diff.sql
